@@ -1,3 +1,70 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 55px;
+}
+
+.about-info-para {
+  text-align: center;
+}
+
+.navbar-brand a {
+  color: #282c34;
+}
+
+.nav-item {
+  padding-right: 10px;
+}
+
+.nav-item a {
+  color: rgba(0, 0, 0, .5);
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  height: 45px;
+  background-color: #282c34;
+  color: white
+}
+
+.footer p {
+  padding-top: 7px
+}
+
+a {
+  color: #282c34;
+  text-decoration: none;
+}
+
+a h4 {
+  color: #007bff;
+  text-decoration-color: #007bff;
+}
+
+a:hover {
+  text-decoration-color: #282c34 !important;
+  color: #282c34 !important;
+}
+
+a h4:hover {
+  color: #282c34 !important;
+}
+
+.pad {
+  padding-left: 10px;
+  color: white
+}
+
+.right {
+  float: right;
+  padding-right: 10px
+}
+
+.success {
+  color: #007bff
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +102,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+#portpic {
+  opacity: 0.6;
+  border-radius: 50%
+}
+
+.grey {
+  color: blue;
+}
+
+.card-img {
+  max-height: 300px
+}
+
+#projects {
+  padding: 30px
+}
+
+#about {
+  padding-top: 15px;
+  padding-bottom: 5px
+}
+
+.btn {
+  margin: 10px
+}
+
+#contact {
+  padding-top: 20px
+}
+
+.about-pics {
+  opacity: 0.7;
+  width: 100%;
+  height: 250px
+}
+
+.about-para {
+  padding: 10px
+}
+
+.about-para:last-child {
+  padding-bottom: 40px
+}
+
+.contact-icons {
+  margin: 50px 30px 20px 30px
+}
+
+.contact-para {
+  padding: 20px
+}
+
+.project-title {
+  padding: 10px
+}
+
+.project-images {
+  min-height: 400px;
+  padding: 20px;
+}
+
+.thin-pic {
+  max-width: 400px;
+  margin: 0 auto;
 }
