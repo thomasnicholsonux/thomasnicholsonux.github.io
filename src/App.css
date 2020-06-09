@@ -65,6 +65,10 @@ a h4:hover {
   color: #007bff
 }
 
+.failure {
+  color: rgb(153, 10, 10)
+}
+
 .App {
   text-align: center;
 }
@@ -169,4 +173,12 @@ a h4:hover {
 .thin-pic {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.landing-list li {
+  padding: 5px
+}
+
+.min-pad {
+  padding: 20px
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import '../App.css'
-import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, CardText } from 'reactstrap';
+import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, CardText, CardFooter } from 'reactstrap';
 
 import unsplash from '../imgs/unsplash.png'
 import oldLanding from '../imgs/unsplashImgs/oldLanding.png'
+import newLanding from '../imgs/unsplashImgs/newlanding.png'
 import manifesto from '../imgs/unsplashImgs/manifesto.png'
 import slant from '../imgs/unsplashImgs/slantUnsplash.png'
 import slantCons from '../imgs/unsplashImgs/slantCons.png'
@@ -14,6 +15,20 @@ import smallError from '../imgs/unsplashImgs/smallError.png'
 import sus from '../imgs/unsplashImgs/sus.png'
 import sheila from '../imgs/unsplashImgs/sheila.jpg'
 import paula from '../imgs/unsplashImgs/paula.jpg'
+import scenario1 from '../imgs/unsplashImgs/scenario1.png'
+import scenario3 from '../imgs/unsplashImgs/scenario3.png'
+import problems from '../imgs/unsplashImgs/problems.png'
+import oldSearchAuto from '../imgs/unsplashImgs/oldSearchAuto.png'
+import newSearchAuto from '../imgs/unsplashImgs/newSearchAuto.png'
+import newSearchAdv from '../imgs/unsplashImgs/newSearchAdv.png'
+import oldSortColour from '../imgs/unsplashImgs/oldSortColour.png'
+import oldSortPopular from '../imgs/unsplashImgs/oldSortPopular.png'
+import newsortColour from '../imgs/unsplashImgs/newSortColour.png'
+import newSortPopular from '../imgs/unsplashImgs/newSortPopular.png'
+
+
+
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -114,7 +129,7 @@ export default function Unsplash() {
                     <Col md={{size: 8, offset: 2}}>
                         <p><em>Competitor Analysis</em></p>
                         <p>There are two main competitor websites which also host stock photography freely uploaded by contributors; 
-                            Pexels and Pixabay. I consulted existing research on these companies to uncover how users feel about their 
+                            Pexels and Pixabay. I consulted <a href='https://www.slant.co/topics/1096/versus/~pexels_vs_unsplash_vs_pixabay'>existing research</a> on these companies to uncover how users feel about their 
                             design and experience compared to Unsplash currently.
                         </p>
                     </Col>
@@ -282,10 +297,10 @@ export default function Unsplash() {
                         <Row>
                         <Col md='6'>
                             <Card>
-                                <CardBody className='success'>
-                                    <CardImg src={sheila}></CardImg>
-                                    <CardTitle className='success'><strong>Sheila Shutterbug </strong> - <em>A Photographer who wants to Engage with a
+                                <CardBody>
+                                    <CardTitle className='text-center'><strong>Sheila Shutterbug </strong> - <em>A Photographer who wants to Engage with a
                                          Creative Community.</em></CardTitle>
+                                    <CardImg src={sheila}></CardImg>
                                     <CardText><strong>About:</strong> Sheila is a 21 year old student studying creative design at university.</CardText>
                                     <CardText><strong>Behaviour:</strong> Sheila will use the site a few times a week to check on the output of the 
                                         photographers she follows. She will also upload several images of her own and check their 
@@ -304,11 +319,11 @@ export default function Unsplash() {
                         </Col>
                         <Col md='6'>
                         <Card>
-                                <CardBody className='success'>
-                                    <CardImg src={paula}></CardImg>
-                                    <CardTitle className='success'><strong>Paula Presenter </strong> - <em>An Advertiser who wants to Find and Build 
+                                <CardBody>
+                                    <CardTitle className='text-center'><strong>Paula Presenter </strong> - <em>An Advertiser who wants to Find and Build 
                                         a collection of images to use in presentations at work.
                                     </em></CardTitle>
+                                    <CardImg src={paula}></CardImg>
                                     <CardText><strong>About:</strong> Paula is a 35 year old employee at an advertising firm who often has to give 
                                     presentations to sell her ideas to clients.
                                     </CardText>
@@ -329,10 +344,266 @@ export default function Unsplash() {
                         </Col>
                         </Row>
                     </Col>
-
+                </Row>
+                <Row>
+                <Col md={{size: 8, offset: 2}}>
+                            <p><em>Scenarios</em></p>
+                            <p>Both Sheila and Paula will have several tasks they want to perform:</p>
+                </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6'>
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Sheila Scenario #1: Casual Browsing</strong></CardTitle>
+                                        <CardText>Sheila arrives on the landing page with the intention of looking through the latest 
+                                            photographs uploaded by those users she follows. She remembers one user she wanted to look 
+                                            at again, but can’t remember her exact username so forgets about her and continues 
+                                            scrolling through the “Following” page. She likes those pictures she enjoys and clicks on 
+                                            users she finds interesting. She sees a beautiful image of a camel and tries to find the 
+                                            best images of camels uploaded recently, but cannot find any option to do this. Frustrated, 
+                                            she leaves the site and looks elsewhere.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='6'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Sheila Scenario #2: Feeling Worthwhile</strong></CardTitle>
+                                        <CardText>Sheila has uploaded several images and is eager to see how they have performed. On 
+                                            her Stats page she is excited to see that her images have been viewed thousands of times 
+                                            and she has several notifications that other users have liked her images. She wants to see 
+                                            exactly how many have liked each image, but is unable to do so. Instead, she wants to see 
+                                            how her images compare to other pictures uploaded that week. She must search for similar 
+                                            terms as her own images and click through each picture individually to see how many times 
+                                            it has been viewed or downloaded in comparison to her own and can only compare over the 
+                                            last thirty days.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md='6'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Paula Scenario #1: Finding the Right Mood</strong></CardTitle>
+                                        <CardText>Paula has an important meeting coming up and must find several high quality images 
+                                            of autumn to convey a particular mood. She only wants the best so tries to search and sort 
+                                            by Most Popular, but cannot. She then tries to search for images with red, yellow, and 
+                                            brown to convey the theme, but must search for these one at a time. Eventually, she finds 
+                                            and downloads a number of useful pictures, saves them to a collection in case she needs 
+                                            them again, and leaves the site.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='6'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Paula Scenario #2: Reusing Ideas</strong></CardTitle>
+                                        <CardText>It’s another autumn presentation and Paula needs to reuse some images from last time. She 
+                                            goes to her Autumn collection but realises she needs a lot more pictures. Rushing since she thought 
+                                            it would be a fast task, she misspells Autumn in the search and gets no results. She must try again 
+                                            until she spells it correctly. She searches and sorts by new, finding several more to add to the 
+                                            collection. She downloads them all in their original size and tries to resize them later in 
+                                            Powerpoint.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>User Flow</em></p>
+                    <p>From these scenarios, I created flow charts using <a href='https://www.draw.io/'>Draw.io</a> to simulate the user’s journeys through the site, 
+                        highlighting any issues they may face along the way and how these could be mitigated in a redesign (see examples below).
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6'>
+                                <CardImg src={scenario1}></CardImg>
+                                <CardFooter>Scenario #1 User Flow</CardFooter>
+                            </Col>
+                            <Col md='6'>
+                                <CardImg src={scenario3}></CardImg>
+                                <CardFooter>Scenario #3 User Flow</CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                <Col md={{size: 8, offset: 2}} style={{paddingTop: '10px'}}>
+                    <p>From combining the issues that became apparent from these charts with the feedback from my participants, 
+                        I sorted common issues into areas of the site to improve. As we can see, the three largest areas for 
+                        improvement are the Landing Page, Search, and Image Info. Due to limited resources, I chose these three areas 
+                        to focus on in the Build phase of my redesign, and made minor adjustments to the other areas.
+                    </p>
+                </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <CardImg src={problems} style={{objectFit: 'contain'}}></CardImg>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <h6 className='text-center project-title'>Build</h6>
+                    <p>Based on my research and personas, I began brainstorming areas to improve on a blackboard. I wrote out the 
+                        features each change would require and how they would help my personas complete their scenarios.
+                    </p>
+                    <p>After forming my initial plans, I made several changes to the Unsplash Landing Page by manipulating the CSS 
+                        via the console. I have also created mock-ups of features to add or improve using 
+                        <a href='https://www.figma.com/'> Figma</a> and <a href='https://www.gimp.org/'>GIMP</a>. The reasoning 
+                        behind each of these changes, along with sample images, can be viewed below.</p>
+                    <p><em>Landing Page</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6'>
+                                <CardImg src={oldLanding}></CardImg>
+                                <CardFooter className='text-center failure'><strong>Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6'>
+                                <CardImg src={newLanding}></CardImg>
+                                <CardFooter className='text-center success'><strong>After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p style={{paddingTop: '10px'}}>This area underwent the largest cosmetic changes. Each change is listed below:</p>
+                        <ol className='landing-list'>
+                            <li>My user research showed that few users interacted with the long list of categories at the top 
+                                of the page and I felt these would be better served incorporated behind a clickable options menu, 
+                                as too many options competing for attention can lead to <a href='https://www.smashingmagazine.com/2016/09/reducing-cognitive-overload-for-a-better-user-experience/'>cognitive overload for the user</a>. I 
+                                also changed “Editorial” to “Popular”, as <a href='https://uxdesign.cc/use-plain-language-in-ux-writing-d7d5b0ea35f1'>users prefer simple language they are familiar with</a>, 
+                                and “Featured” to “In the Spotlight” to maintain the photographical theme of the site and to avoid 
+                                needless repetition. Having just three options in the centre of the screen along with a sample of 
+                                images visible underneath just above the fold should prevent <a href='https://usabilla.com/blog/paradox-choice-less-ux-design/'>paralysis of choice</a>.
+                            </li>
+                            <li>My participants commented on the inviting nature of the “Join Now” button when they were logged out, so I hope that by 
+                                adding a similar effect to the Submit button, this will incentivise photographers to contribute more pictures. The use of 
+                                colour here is in line with similar uses throughout the site, and so remains in line with Unsplash’s minimalist colour 
+                                palette. I considered adding an icon, but decided against the idea after reading <a href='https://www.nngroup.com/articles/icon-usability/'>this article</a> and finding that I could not 
+                                think of an appropriate image to use.</li>
+                            <li>The Photo of the Day took up a lot of screen real estate, but still did not always give an accurate 
+                                representation of the image on display. I have made it shorter both to invite users to look at a 
+                                better representation by clicking on it, and to allow for the top of more images to be visible 
+                                underneath the category selectors. This will hopefully please both users and customers who have 
+                                paid for “Sponsored” images to appear at the top of the results list, as they are now partially 
+                                visible without the need to scroll down.</li>
+                            <li>I removed the “Home” and “Collections” buttons as they were rarely focused on by users and 
+                                felt redundant when there were other options to accomplish the same task. I also moved the “More” 
+                                menu dots to the corner of the screen. Again, this helps focus the user on the more common areas 
+                                they may wish to use by incorporating greater white space.
+                            </li>
+                            <li>I shortened the search bar to make room for an “Advanced Search” option next to it with additional 
+                                filters, as <a href='https://www.nngroup.com/articles/search-visible-and-simple/'>the vast majority of users do not search for more than two words</a>. NB: This article 
+                                offers some thoughts on the Advanced Search feature, but I believe my usage of it here does not contradict
+                                any of the messages within.
+                            </li>
+                        </ol>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>Search (Autofill and Advanced)</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6'>
+                                <CardImg src={oldSearchAuto}></CardImg>
+                                <CardFooter className='text-center failure'><strong>Search Autofill Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6'>
+                                <CardImg src={newSearchAuto}></CardImg>
+                                <CardFooter className='text-center success'><strong>Search Autofill After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}} className='min-pad'>
+                    <p>Taking inspiration from Unsplash’s competitor sites, Pexels and Pixabay, I fleshed out the autofill features 
+                        to account for Users and Collections as well as pictures, making it clearer to users what they are able to 
+                        search for. The tabs for Pictures, Users, and Collections are also slightly enlarged and given greater weight, 
+                        as test participants sometimes struggled to see these options. 
+                    </p>
+                    <Row>
+                            <Col md='12' className='min-pad'>
+                                <CardImg src={newSearchAdv}></CardImg>
+                                <CardFooter className='text-center success'><strong>Advanced Search</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    <p>The advanced search now also includes the ability to sort by min/max views, downloads and likes, as well 
+                        as by location, camera used, and desired image resolution. 
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>Sort Results</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={oldSortColour} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center failure'><strong>Sort Colour Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={newsortColour} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center success'><strong>Sort Colour After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={oldSortPopular} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center failure'><strong>Sort Order Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={newSortPopular} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center success'><strong>Sort Order After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p>Several of my test participants noticed the sort features available after searching, but expressed 
+                        disappointment at their limited options. I have therefore expanded on these options to include popularity, 
+                        views, and distance from the user, as well as added options for highlighting by multiple colours.
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>Image Info</em></p>
+                    </Col>
                 </Row>
             </Container>
             
         </div>
     )
 }
+
+// NEXT: same two images of Pic Info w/denise chan pic, check for microanimations article, include third image under first text?
