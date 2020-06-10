@@ -2,6 +2,8 @@ import React from 'react'
 import '../App.css'
 import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, CardText, CardFooter } from 'reactstrap';
 
+import Footer from '../Footer'
+
 import unsplash from '../imgs/unsplash.png'
 import oldLanding from '../imgs/unsplashImgs/oldLanding.png'
 import newLanding from '../imgs/unsplashImgs/newlanding.png'
@@ -25,6 +27,14 @@ import oldSortColour from '../imgs/unsplashImgs/oldSortColour.png'
 import oldSortPopular from '../imgs/unsplashImgs/oldSortPopular.png'
 import newsortColour from '../imgs/unsplashImgs/newSortColour.png'
 import newSortPopular from '../imgs/unsplashImgs/newSortPopular.png'
+import oldInfo from '../imgs/unsplashImgs/oldInfo.png'
+import newInfo from '../imgs/unsplashImgs/newInfo.png'
+import newInfoClick from '../imgs/unsplashImgs/newInfoClick.png'
+import oldError from '../imgs/unsplashImgs/oldError.png'
+import newError from '../imgs/unsplashImgs/newError.png'
+import oldProfile from '../imgs/unsplashImgs/oldProfile.png'
+import newProfile from '../imgs/unsplashImgs/newProfile.png'
+
 
 
 
@@ -187,34 +197,42 @@ export default function Unsplash() {
                         <Row>
                     <Col md='3'>
                         <Card>
+                        <CardBody>
                             <CardTitle><strong>Task 1: Find and Download a Picture of a Desert</strong></CardTitle>
                             <CardImg src={desert}></CardImg>
                             <CardText className='success text-center'>Success: 3/3</CardText>
                             <CardText>Notes: All users clicked download from small image without expanding it.</CardText>
+                        </CardBody>
                         </Card>
                     </Col>
                     <Col md='3'>
                         <Card>
+                        <CardBody>
                             <CardTitle><strong>Task 3: Find and Download a Small image of two dogs</strong></CardTitle>
                             <CardImg src={dogs}></CardImg>
                             <CardText className='success text-center'>Success: 1/3</CardText>
                             <CardText>Notes: Users struggled to find sizing options for downloading images.</CardText>
+                        </CardBody>
                         </Card>
                     </Col>
                     <Col md='3'>
                         <Card>
+                        <CardBody>
                             <CardTitle><strong>Task 4: Find a collection of sporting pictures</strong></CardTitle>
                             <CardImg src={sports}></CardImg>
                             <CardText className='success text-center'>Success: 1/3</CardText>
                             <CardText>Notes: Users did not understand the point of collections or how they differed from categories.</CardText>
+                        </CardBody>
                         </Card>
                     </Col>
                     <Col md='3'>
                         <Card>
+                        <CardBody>
                         <CardTitle><strong>Task 6: Find the account for user "tomnpics"</strong></CardTitle>
                             <CardImg src={smallError}></CardImg>
                             <CardText className='success text-center'>Success: 2/3</CardText>
                             <CardText>Notes: Users had difficult searching by 'User'. Error message seemed to indicate a failed search</CardText>
+                        </CardBody>
                         </Card>
                     </Col>
                     </Row>
@@ -545,7 +563,7 @@ export default function Unsplash() {
                     </p>
                     <Row>
                             <Col md='12' className='min-pad'>
-                                <CardImg src={newSearchAdv}></CardImg>
+                                <CardImg src={newSearchAdv} style={{objectFit: 'contain'}}></CardImg>
                                 <CardFooter className='text-center success'><strong>Advanced Search</strong></CardFooter>
                             </Col>
                         </Row>
@@ -600,8 +618,183 @@ export default function Unsplash() {
                     <p><em>Image Info</em></p>
                     </Col>
                 </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={oldInfo} ></CardImg>
+                                <CardFooter className='text-center failure'><strong>Image Expanded Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={newInfo} ></CardImg>
+                                <CardFooter className='text-center success'><strong>Image Expanded After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p>To foster the sense of community Unsplash’s manifesto says they offer, I believe it is important to demonstrate that there are 
+                        many other users of the site. Currently, download and view numbers are hidden behind another click when viewing images. By adding 
+                        them to the first page, I hope this will demonstrate to the user that they are part of a large network all viewing and consuming 
+                        these pictures. I hope this will encourage user engagement by <a href='forbesindia.com/article/brand-connect/gamification-in-ux-design-for-enhanced-user-experience-and-engagement/52075/1'>gamifying the process of submitting and viewing pictures</a>.
+                    </p>
+                    <p>Many users also struggled with the task of finding images of a specific size. I have therefore clarified the use 
+                        of the dropdown menu next to “Download” by making them both a distinct colour and added the resolution size of 
+                        the image next to the download button in case users accidentally download an oversized image. I also added a 
+                        small amount of colour to each icon to draw attention and allow for greater feedback when interacting with them. 
+                        I added a <a href='https://uxplanet.org/ux-of-microinteractions-for-user-delight-fac1baed527a'> micro animation</a> of the heart expanding when users click and added a success message underneath to 
+                        clarify what clicking the “Like”, “Add to Collection” or “Download” buttons did.
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='12' className='min-pad'>
+                                <CardImg src={newInfoClick} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center success'><strong>Image Expanded (Clicking Like)</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>Search Error</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={oldError} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center failure'><strong>Search Error Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={newError} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center success'><strong>Search Error After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p>The current error page offers no information as to what has gone wrong and may be interpreted by users as 
+                        the site crashing. I have added a simple error message underneath the image to convey what has happened, 
+                        offered the user a “Did you mean” alternative in case of accidental misspellings, and clarified that they 
+                        could also search under “Users” and “Collections” as well. I worded the message <a href='https://medium.com/thinking-design/how-to-write-design-user-friendly-error-messages-87d0207bb902'>
+                        to put the onus on the site 
+                        rather than the user for the issue and kept it short to aid understanding</a>.
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>User Profile</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={oldProfile} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center failure'><strong>User Profile Before</strong></CardFooter>
+                            </Col>
+                            <Col md='6' className='min-pad'>
+                                <CardImg src={newProfile} style={{objectFit: 'contain'}}></CardImg>
+                                <CardFooter className='text-center success'><strong>User Profile After</strong></CardFooter>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p>
+                    Addressing common requests for features on Unsplash and already featuring on competitor sites, 
+                    I added an optional Donate button linking to a profile’s Paypal account. 
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <h6 className='text-center project-title'>Test</h6>
+                    <p><em>Feedback</em></p>
+                    <p>Using the same participants as for my initial testing (again, due to time availability), I asked them to look 
+                        over some of the changes to the site. I also asked them to complete tasks they initially struggled with, such 
+                        as finding the Users and Collections tabs when searching, and downloading the correct size images. They 
+                        expressed appreciation for the clearer error page information on failed searches. All of my participants found 
+                        the tasks easier to complete than in the first round of usability testing. 
+                    </p>
+                    <Row>
+                    <Col md={{size: '8', offset:'2'}}>
+                        <Row>
+                    <Col md='6'>
+                        <Card>
+                            <CardBody>
+                            <CardTitle><strong>Task 3: Find and Download a Small image of two dogs</strong></CardTitle>
+                            <CardImg src={dogs}></CardImg>
+                            <CardText className='success text-center'>Success: 3/3</CardText>
+                            <CardText>Notes: Users found the new download button more informative.</CardText>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                    <Col md='6'>
+                        <Card>
+                            <CardBody>
+                        <CardTitle><strong>Task 6: Find the account for user "tomnpics"</strong></CardTitle>
+                            <CardImg src={smallError}></CardImg>
+                            <CardText className='success text-center'>Success: 3/3</CardText>
+                            <CardText>Notes: The new error message helped participants realise how they could find 
+                                what they were searching for.
+                            </CardText>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                    </Row>
+                    </Col>
+                </Row>
+                    <p style={{paddingTop: '10px'}}><em>Potential Future Testing</em></p>
+                    <p>As this is a practice project, I was not able to complete more thorough testing of changes to the site. However, 
+                        were I to have more time and access to participants and development, I would have conducted A/B testing with the 
+                        original version of the site and my own changes to track how users interacted with both. I would consult 
+                        analytics to track user journeys through the site and locate pain points to see if my changes had caused any 
+                        unforeseen issues. Eye tracking may also be useful in seeing how users locate information on the site and whether 
+                        adding small amounts of colour or increasing font weights had an effect on search speeds.</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <h6 className='text-center project-title'>Summary</h6>
+                    <p>I found this project to be both enjoyable and educational. Conducting user research gave me an insight into how 
+                        other users interact with the site that I had not considered myself and showed me how important it is to have a 
+                        wide variety of participants with their own preconceptions and mental models. It taught me the importance of 
+                        iteration, as I understood how my changes would themselves need to be tested to see whether they did actually improve 
+                        the site, and also opened my eyes to the breadth of literature on UX design available online which I consulted to 
+                        make my decisions.
+                    </p>
+                    <p>
+                    This was my first time working with a lot of the software I used to create the flowcharts and mock-ups featured 
+                    here. I particularly enjoyed using Figma to add features I was not able to incorporate by only making adjustments 
+                    to the site’s CSS via the console. In future, I want to learn more about similar software to create interactive 
+                    prototypes for some of the more significant features I wanted to add with this redesign.
+                    </p>
+                </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <h6 className='text-center project-title'>References</h6>
+                    <p>Throughout this project, I consulted a number of articles to help inform and justify my decisions. Most of them
+                        are linked throughout this Case Study, but below you can find an exhaustive list of everything I read in preparation
+                        for and whilst conducting this redesign.
+                    </p>
+                    <ul>
+                        <li>Article A</li>
+                        <li>Article B</li>
+                    </ul>
+                </Col>
+                </Row>
             </Container>
-            
+            < Footer />
         </div>
     )
 }
