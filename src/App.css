@@ -182,3 +182,8 @@ a h4:hover {
 .min-pad {
   padding: 20px
 }
+
+.review-site-imgs {
+  max-height: 150px;
+  padding: 20px
+}

@@ -35,17 +35,8 @@ import newError from '../imgs/unsplashImgs/newError.png'
 import oldProfile from '../imgs/unsplashImgs/oldProfile.png'
 import newProfile from '../imgs/unsplashImgs/newProfile.png'
 
-
-
-
-
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPeopleArrows, faFighterJet, faEye } from '@fortawesome/free-solid-svg-icons'
-
-
-
 
 
 export default function Unsplash() {
@@ -53,6 +44,7 @@ export default function Unsplash() {
         <div>
             <Container fluid>
                 <h1 className='text-center project-title'>Remaking an Unsplash</h1>
+                <hr className="my-2" />
                 <Row>
                     <Col md='6'>
                         <CardImg src={unsplash}></CardImg>
@@ -69,6 +61,7 @@ export default function Unsplash() {
                         Content Strategist, and a small amount of Front End Web Development work.</p>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>Problem</h6>
@@ -101,6 +94,7 @@ export default function Unsplash() {
                         </p>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                     <h6 className='project-title'>Contents</h6>
@@ -119,6 +113,7 @@ export default function Unsplash() {
                     </ol>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>Learning</h6>
@@ -300,6 +295,7 @@ export default function Unsplash() {
                             </Row>
                         </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                             <h6 className='text-center project-title'>Design</h6>
@@ -472,6 +468,7 @@ export default function Unsplash() {
                         <CardImg src={problems} style={{objectFit: 'contain'}}></CardImg>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                     <h6 className='text-center project-title'>Build</h6>
@@ -715,6 +712,7 @@ export default function Unsplash() {
                     </p>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                     <h6 className='text-center project-title'>Test</h6>
@@ -762,6 +760,7 @@ export default function Unsplash() {
                         adding small amounts of colour or increasing font weights had an effect on search speeds.</p>
                     </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                     <h6 className='text-center project-title'>Summary</h6>
@@ -780,6 +779,7 @@ export default function Unsplash() {
                     </p>
                 </Col>
                 </Row>
+                <hr className="my-2" />
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
                     <h6 className='text-center project-title'>References</h6>

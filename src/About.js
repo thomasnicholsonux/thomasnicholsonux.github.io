@@ -35,14 +35,15 @@ export default function About() {
                 <Row>
                     <Col md={{ size: 8, offset: 2 }} className='text-center align-items-center justify-content-center about-para'>
                         In addition to my background in education, I also have experience with Web Development, having taught myself JavaScript, 
-                        ReactJS, and several other languages. I built this site using React and Bootstrap and have a portfolio of other 
-                        projects I have made over the last year. I also designed a Wordpress site for a client who needed their own academic
-                        portfolio created.</Col>
+                        ReactJS, and several other languages. I built this site using React and Bootstrap and have a <a href='https://tomnpython.github.io/Portfolio'>
+                        portfolio</a> of other 
+                        projects I have made over the last two years. I also designed a <a href='https://www.rachelemoran.com'>Wordpress site</a> for a client who needed their own academic
+                        portfolio.</Col>
                 </Row>
                 <Row>
                     <Col md={{ size: 8, offset: 2 }} className='text-center align-items-center justify-content-center about-para'>
-                        When not working or studying, I enjoy photography and writing. I have an active portfolio on Unsplash and have had several short
-                        stories published in anthologies in the UK, Ireland, and Canada. </Col>
+                        When not working or studying, I enjoy photography and writing. I have <a href='https://unsplash.com/@tomnpics'>an active portfolio on Unsplash</a> and have had several short
+                        stories published in anthologies in the UK, Ireland, and <a href='https://www.scarletleafreview.com/short-stories21/category/thomas-nicholson'>Canada.</a> </Col>
                 </Row>
             </Container>
             <Footer />
