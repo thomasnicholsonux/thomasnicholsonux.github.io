@@ -187,3 +187,13 @@ a h4:hover {
   max-height: 150px;
   padding: 20px
 }
+
+.pro {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.con {
+  color: rgb(153, 10, 10);
+  font-weight: bold;
+}

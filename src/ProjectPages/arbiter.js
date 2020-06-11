@@ -8,6 +8,11 @@ import arbiter from '../imgs/arbiter.png'
 import goodreads from '../imgs/arbiterImgs/goodreads.png'
 import imdb from '../imgs/arbiterImgs/imdb.png'
 import tripadvisor from '../imgs/arbiterImgs/tripadvisor.png'
+import goodreadsApp from '../imgs/arbiterImgs/goodreadsApp.png'
+import imdbApp from '../imgs/arbiterImgs/imdbApp.jpg'
+import tripadvisorApp from '../imgs/arbiterImgs/tripadvisorApp.png'
+
+
 
 
 
@@ -111,19 +116,59 @@ export default function Arbiter() {
                         <p><u>Goodreads</u>
                         </p>
                     <Row>
-                        <Col>img in site</Col>
-                        <Col>Slant
-                            <p>Pros</p>
-                            <p>Cons</p>
-                        </Col>
-                        <Col>AppStore
-                            <p>Pros</p>
-                            <p>Cons</p>
-                        </Col>
-                        <Col>Case Study
-                            <p>Pros</p>
-                            <p>Cons</p>
-                        </Col>
+                        <Col md='3'><CardImg src={goodreadsApp}></CardImg></Col>
+                        <Col md='9'>
+                            <p>Firstly, I looked at existing user experiences with the Goodreads app and website. <a href='https://www.slant.co/options/2734/~goodreads-review'>Slant.co</a> offers both 
+                                pros and cons that users have submitted for various websites. For Goodreads, the pros included the <span className='pro'>depth of 
+                                their selection of books</span> and the <span className='pro'>constant flow of new user reviews</span>, while the cons included <span className='con'>the large 
+                                amount of ads</span> and <span className='con'> poor navigation</span>.</p>
+                            <p>On the <a href='https://apps.apple.com/us/app/goodreads-book-reviews/id355833469'>Appstore</a>, the Goodreads App has a score of 4.8/5 from over 300,000 reviews. From consulting the 
+                                most highly ranked of these reviews, common benefits included <span className='pro'>the ability to save books to view later</span> 
+                                and <span className='pro'>annual votes on top books</span>, while complaints included <span className='con'>the abundance of false reviews</span>.</p>
+                            <p><a href='https://medium.muz.li/goodreads-app-ux-case-study-2e63214fc005'>Sylvie Stephanie recently conducted a UX Case Study on Goodreads</a> and made some very interesting and 
+                                beneficial changes to the app in her redesign. She stressed the importance of <span className='pro'>trusted ratings and 
+                                reviews</span> to users, as well as <span className='pro'>personalised recommendations</span>, and <span className='pro'>a viewable history of the user’s 
+                                reviews and read books</span>. 
+                            </p>
+                        </Col> 
+                    </Row>
+                    <p><u>IMDB</u>
+                        </p>
+                    <Row>
+                        <Col md='9'>
+                            <p>Firstly, I looked at existing user experiences with the Goodreads app and website. <a href='https://www.slant.co/options/2734/~goodreads-review'>Slant.co</a> offers both 
+                                pros and cons that users have submitted for various websites. For Goodreads, the pros included the <span className='pro'>depth of 
+                                their selection of books</span> and the <span className='pro'>constant flow of new user reviews</span>, while the cons included <span className='con'>the large 
+                                amount of ads</span> and <span className='con'> poor navigation</span>.</p>
+                            <p>On the <a href='https://apps.apple.com/us/app/goodreads-book-reviews/id355833469'>Appstore</a>, the Goodreads App has a score of 4.8/5 from over 300,000 reviews. From consulting the 
+                                most highly ranked of these reviews, common benefits included <span className='pro'>the ability to save books to view later</span> 
+                                and <span className='pro'>annual votes on top books</span>, while complaints included <span className='con'>the abundance of false reviews</span>.</p>
+                            <p><a href='https://medium.muz.li/goodreads-app-ux-case-study-2e63214fc005'>Sylvie Stephanie recently conducted a UX Case Study on Goodreads</a> and made some very interesting and 
+                                beneficial changes to the app in her redesign. She stressed the importance of <span className='pro'>trusted ratings and 
+                                reviews</span> to users, as well as <span className='pro'>personalised recommendations</span>, and <span className='pro'>a viewable history of the user’s 
+                                reviews and read books</span>. 
+                            </p>
+                        </Col> 
+                        <Col md='3'><CardImg src={imdbApp}></CardImg></Col>
+                    </Row>
+                    <p><u>TripAdvisor</u>
+                        </p>
+                    <Row>
+                        <Col md='3'><CardImg src={tripadvisorApp}></CardImg></Col>
+                        <Col md='9'>
+                            <p>Firstly, I looked at existing user experiences with the Goodreads app and website. <a href='https://www.slant.co/options/2734/~goodreads-review'>Slant.co</a> offers both 
+                                pros and cons that users have submitted for various websites. For Goodreads, the pros included the <span className='pro'>depth of 
+                                their selection of books</span> and the <span className='pro'>constant flow of new user reviews</span>, while the cons included <span className='con'>the large 
+                                amount of ads</span> and <span className='con'> poor navigation</span>.</p>
+                            <p>On the <a href='https://apps.apple.com/us/app/goodreads-book-reviews/id355833469'>Appstore</a>, the Goodreads App has a score of 4.8/5 from over 300,000 reviews. From consulting the 
+                                most highly ranked of these reviews, common benefits included <span className='pro'>the ability to save books to view later</span> 
+                                and <span className='pro'>annual votes on top books</span>, while complaints included <span className='con'>the abundance of false reviews</span>.</p>
+                            <p><a href='https://medium.muz.li/goodreads-app-ux-case-study-2e63214fc005'>Sylvie Stephanie recently conducted a UX Case Study on Goodreads</a> and made some very interesting and 
+                                beneficial changes to the app in her redesign. She stressed the importance of <span className='pro'>trusted ratings and 
+                                reviews</span> to users, as well as <span className='pro'>personalised recommendations</span>, and <span className='pro'>a viewable history of the user’s 
+                                reviews and read books</span>. 
+                            </p>
+                        </Col> 
                     </Row>
                     </Col>
                 </Row>
