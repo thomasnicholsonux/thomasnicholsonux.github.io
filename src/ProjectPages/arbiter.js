@@ -5,14 +5,14 @@ import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, 
 import Footer from '../Footer'
 
 import arbiter from '../imgs/arbiter.png'
+import feedScreen from '../imgs/arbiterImgs/FeedScreen.png'
 import goodreads from '../imgs/arbiterImgs/goodreads.png'
 import imdb from '../imgs/arbiterImgs/imdb.png'
 import tripadvisor from '../imgs/arbiterImgs/tripadvisor.png'
 import goodreadsApp from '../imgs/arbiterImgs/goodreadsApp.png'
 import imdbApp from '../imgs/arbiterImgs/imdbApp.jpg'
 import tripadvisorApp from '../imgs/arbiterImgs/tripadvisorApp.png'
-
-
+import eflSurvey from '../imgs/arbiterImgs/eflSurvey.png'
 
 
 
@@ -23,10 +23,13 @@ export default function Arbiter() {
                 <h1 className='text-center project-title'>Arbiter - After All The Bells And Whistles</h1>
                 <hr className="my-2" />
                 <Row>
-                    <Col md='5'>
-                        <CardImg src={arbiter} style={{objectFit: 'contain', maxHeight: '275px'}}></CardImg>
+                    <Col md='4'>
+                        <CardImg src={arbiter} style={{objectFit: 'contain'}}></CardImg>
                     </Col>
-                    <Col md='7'>
+                    <Col md='2'>
+                        <CardImg src={feedScreen} style={{objectFit: 'contain', maxHeight: '275px'}}></CardImg>
+                    </Col>
+                    <Col md='6'>
                     <h6>Project</h6>
                     <p>To better understand the entire UX design process, I completed the design
                         of a new sports review app. I felt this would both teach me more about how UX design work flows and functions
@@ -136,17 +139,21 @@ export default function Arbiter() {
                         </p>
                     <Row>
                         <Col md='9'>
-                            <p>Firstly, I looked at existing user experiences with the Goodreads app and website. <a href='https://www.slant.co/options/2734/~goodreads-review'>Slant.co</a> offers both 
-                                pros and cons that users have submitted for various websites. For Goodreads, the pros included the <span className='pro'>depth of 
-                                their selection of books</span> and the <span className='pro'>constant flow of new user reviews</span>, while the cons included <span className='con'>the large 
-                                amount of ads</span> and <span className='con'> poor navigation</span>.</p>
-                            <p>On the <a href='https://apps.apple.com/us/app/goodreads-book-reviews/id355833469'>Appstore</a>, the Goodreads App has a score of 4.8/5 from over 300,000 reviews. From consulting the 
-                                most highly ranked of these reviews, common benefits included <span className='pro'>the ability to save books to view later</span> 
-                                and <span className='pro'>annual votes on top books</span>, while complaints included <span className='con'>the abundance of false reviews</span>.</p>
-                            <p><a href='https://medium.muz.li/goodreads-app-ux-case-study-2e63214fc005'>Sylvie Stephanie recently conducted a UX Case Study on Goodreads</a> and made some very interesting and 
-                                beneficial changes to the app in her redesign. She stressed the importance of <span className='pro'>trusted ratings and 
-                                reviews</span> to users, as well as <span className='pro'>personalised recommendations</span>, and <span className='pro'>a viewable history of the user’s 
-                                reviews and read books</span>. 
+                            <p>As with Goodreads, <a href='https://www.slant.co/improve/options/19063/~imdb-review'>Slant.co’s </a> 
+                                pros included <span className='pro'>the depth of movies available to search for and review</span>. 
+                                However, some users expressed concern about <span className='con'>how IMDB recommended movies</span> and whether there were 
+                                other sites with better engines for providing recommendations.
+                            </p>
+                            <p>	IMDB’s <a href='https://apps.apple.com/us/app/imdb-movies-tv-shows/id342792525'>Appstore reviews </a>
+                                 praised its <span className='pro'>“Watch List” feature</span> for tracking movies and TV shows that 
+                                users have watched or want to watch. Other reviewers showed frustration with the <span className='con'>search bar</span>, 
+                                <span className='con'> history</span>, and the <span className='con'>navigation for writing their own reviews</span>.
+                            </p>
+                            <p><a href='https://medium.muz.li/imdb-redesigned-ux-ui-167a59c27642'>A redesign of the IMDB App by Nourdine Diouane </a> 
+                                gave me many ideas for my layouts and user base. This 
+                                case study demonstrated the various reasons people used the site, including selecting movies to watch 
+                                (43%), saving and sharing movies (25%), and browsing movies (19%). The <span className='pro'>redesigned movie pages</span> helped 
+                                me visualise how events could appear in this app.
                             </p>
                         </Col> 
                         <Col md='3'><CardImg src={imdbApp}></CardImg></Col>
@@ -156,20 +163,101 @@ export default function Arbiter() {
                     <Row>
                         <Col md='3'><CardImg src={tripadvisorApp}></CardImg></Col>
                         <Col md='9'>
-                            <p>Firstly, I looked at existing user experiences with the Goodreads app and website. <a href='https://www.slant.co/options/2734/~goodreads-review'>Slant.co</a> offers both 
-                                pros and cons that users have submitted for various websites. For Goodreads, the pros included the <span className='pro'>depth of 
-                                their selection of books</span> and the <span className='pro'>constant flow of new user reviews</span>, while the cons included <span className='con'>the large 
-                                amount of ads</span> and <span className='con'> poor navigation</span>.</p>
-                            <p>On the <a href='https://apps.apple.com/us/app/goodreads-book-reviews/id355833469'>Appstore</a>, the Goodreads App has a score of 4.8/5 from over 300,000 reviews. From consulting the 
-                                most highly ranked of these reviews, common benefits included <span className='pro'>the ability to save books to view later</span> 
-                                and <span className='pro'>annual votes on top books</span>, while complaints included <span className='con'>the abundance of false reviews</span>.</p>
-                            <p><a href='https://medium.muz.li/goodreads-app-ux-case-study-2e63214fc005'>Sylvie Stephanie recently conducted a UX Case Study on Goodreads</a> and made some very interesting and 
-                                beneficial changes to the app in her redesign. She stressed the importance of <span className='pro'>trusted ratings and 
-                                reviews</span> to users, as well as <span className='pro'>personalised recommendations</span>, and <span className='pro'>a viewable history of the user’s 
-                                reviews and read books</span>. 
+                            <p>The <span className='pro'>number of reviews</span> on Tripadvisor for restaurants, hotels, etc. 
+                                was viewed positively by users on 
+                                <a href='https://www.slant.co/options/14774/~tripadvisor-review'> Slant</a>, whereas <span className='con'>outdated reviews</span>, 
+                                <span className='con'> untrusted reviewers</span>, and <span className='con'>the prevalence of sponsored content </span> 
+                                negatively impacted their experiences with the site.
+                            </p>
+                            <p>On the <a href='https://apps.apple.com/us/app/tripadvisor-hotels-vacation/id284876795'>Appstore</a>, 
+                                users mentioned <span className='pro'>enjoying reading other people’s reviews</span>, and <span className='pro'>saving or sharing 
+                                reviews</span> with their friends, but as with the other review apps found <span className='con'>searching</span> to be an occasionally 
+                                unhelpful feature.
+                            </p>
+                            <p><a href='https://www.abhasmisraraj.com/design/tripadvisor'>Abhas Misraraj's usability testing </a> 
+                                for the TripAdvisor app showed the importance of <span className='pro'>average ratings</span> and 
+                                <span className='pro'> the total number of reviews</span> in influencing user decisions. They also discovered how important users 
+                                found <span className='pro'>filters</span> when searching.
                             </p>
                         </Col> 
                     </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p>Throughout this research, I made notes on the common positive and negative themes that emerged across each 
+                        website or app. From this, it became clear that several aspects should be carefully considered when building 
+                        my own app.
+                    </p>
+                    <ol>
+                        <li><strong>Highlight</strong> review numbers and averages.
+                        </li>
+                        <li><strong>Include</strong> an adaptable and accurate search feature.
+                        </li>
+                        <li><strong>Personalise</strong> what users see based on their history and choices.
+                        </li>
+                    </ol>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <p><em>User Analysis</em></p>
+                    <p>While I intend for this app to be beneficial for fans of a multitude of sports, there appears to be more 
+                        data available for some sports than others. To gather data on football fans, I consulted the 
+                        <a href='https://www.efl.com/contentassets/5fd7b93168134ee0b9da11fa8e30abd0/efl-supporters-survey-2019-report.pdf'> EFL Supporters 
+                        Survey 2019</a>, which has helped inform the design of our app. I also found a research publication by 
+                        <a href='https://ec.europa.eu/competition/antitrust/cases/dec_docs/38173/38173_104_7.pdf'> Ofcom</a> on 
+                        viewing trends and fan attitudes/behaviour which was helpful in deciding what features might be most important 
+                        to our potential users.
+                    </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='4'><CardImg src={eflSurvey} style={{marginTop: '40px', marginBottom: '10px'}}></CardImg></Col>
+                            <Col md='8'><p>Some interesting findings include:
+                                        </p>
+                                        <ul>
+                                            <li>Participants in the survey were split 45/55 between those under/over 45 years old 
+                                                and 86/14 male/female.
+                                            </li>
+                                            <li>89% of supporters viewed post-match content using at least one of their club’s 
+                                                official channels.
+                                            </li>
+                                            <li>60% of supporters stated the importance of creating memories (in comparison to 
+                                                winning games) when engaging with their club.
+                                            </li>
+                                            <li>In terms of what viewers wanted to find when viewing post-match content, 72% 
+                                                searched for highlights/clips, 43% for team performance reviews, and 42% for 
+                                                fan opinions and insights.
+                                            </li>
+                                            <li>Even down to lower levels, 88% of supporters regularly watch teams they do not support.
+                                            </li>
+                                            <li>Motivations for watching non-live games included relaxation and letting loose.
+                                            </li>
+                                        </ul>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p>From this data, it appears that there would be an interest in this sort of app from a wide fan base. 
+                            This also helped me decide on what features users may be interested in seeing. The information 
+                            regarding motivations influenced my design choices regarding colour schemes and layout.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p><em>User Interviews</em></p>
+                        <p>As a final part of my preliminary research, I conducted two interviews. First, I observed my participants 
+                            using some 
+                            of the existing review sites. I then asked them several open-ended questions about their reviewing 
+                            habits. From this, I gathered data on how they might interact with my app and what they would like to 
+                            see included.
+                        </p>
                     </Col>
                 </Row>
             </Container>
