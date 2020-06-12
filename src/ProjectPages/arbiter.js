@@ -13,6 +13,13 @@ import goodreadsApp from '../imgs/arbiterImgs/goodreadsApp.png'
 import imdbApp from '../imgs/arbiterImgs/imdbApp.jpg'
 import tripadvisorApp from '../imgs/arbiterImgs/tripadvisorApp.png'
 import eflSurvey from '../imgs/arbiterImgs/eflSurvey.png'
+import Sam from '../imgs/arbiterImgs/Sam.jpg'
+import Richard from '../imgs/arbiterImgs/Richard.jpg'
+
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faNewspaper, faPenAlt, faUserFriends} from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -259,6 +266,147 @@ export default function Arbiter() {
                             see included.
                         </p>
                     </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Card>
+                            <CardBody>
+                        <Row>
+                            <Col md='12' className='d-flex justify-content-start'><h5><em>"I might leave more reviews
+                                if it was easier to do."</em> - Interviewee #1</h5></Col>
+                        </Row>
+                        <br />
+                        <Row>
+                            <Col md='12' className='d-flex justify-content-end'>
+                                <h5><em>"Sometimes (leaving reviews) feels like giving back after reading other peoples'."</em>
+                                - Interviewee #2</h5>
+                            </Col>
+                        </Row>
+                        </CardBody>
+                        <Row>
+                            <Col md='12'>
+                            <CardFooter>Selected Quotes from User Interviews</CardFooter>
+                            </Col>
+                        </Row>
+                        </Card>
+                    </Col>    
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}>
+                        <p><em>Areas of Focus</em></p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p>Looking at all my notes from Competitor Analysis, User Analysis, and User Interviews, I decided that a 
+                            number of main features should take focus in the next development phases. I therefore wrote up three 
+                            goals and kept them visible near me throughout my work to keep me focused when making any future design 
+                            choices.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row  className='justify-content-center'>
+                            <Col md='4'>
+                                <Row className='justify-content-center success'>
+                                <FontAwesomeIcon icon={faNewspaper} size='6x' className=''></FontAwesomeIcon>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                <h5>A Well Curated Reviews Feed</h5>
+                                </Row>
+                            </Col>
+                            <Col md='4'>
+                                <Row className='justify-content-center success'>
+                                <FontAwesomeIcon icon={faPenAlt} size='6x'></FontAwesomeIcon>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                <h5>Easy-to-Create Written Reviews</h5>
+                                </Row>
+                            </Col>
+                            <Col md='4'>
+                            <Row className='justify-content-center success'>
+                                <FontAwesomeIcon icon={faUserFriends} size='6x'></FontAwesomeIcon>
+                                </Row>
+                                <Row className='justify-content-center'>
+                                <h5>Social Engagement Options</h5>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <hr className='my-2' />
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <h6 className='text-center project-title'>Design</h6>
+                        <p><em>Personas</em></p>
+                        <p>Arising out of my initial research, I have created two personas to represent how and why different 
+                            users may make use of this app.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                        <Col md='6'>
+                            <Card>
+                                <CardBody>
+                                    <CardTitle className='text-center'><strong>Sam Searcher </strong> - <em>A young adult fan who 
+                                        wants to watch exciting recent sporting events without spoilers.
+                                    </em></CardTitle>
+                                    <CardImg src={Sam} style={{objectFit: 'contain'}}></CardImg>
+                                    <CardText><strong>About:</strong> Sam works long, irregular hours and often finds it difficult to 
+                                    arrange to see live sporting events. When he returns home, he sometimes watches Sky Sports in the 
+                                    background, or searches for highlights on Reddit and other forums on his phone.</CardText>
+                                    <CardText><strong>Behaviour:</strong> Sam will use the app when travelling home, or at home on the 
+                                    sofa if there is no room to access his phone on the train. He will scroll through recent events or 
+                                    sports he is interested in to see if there is anything worth watching that evening before bed.
+                                    </CardText>
+                                    <CardText><strong>Frustrations:</strong> When he uses his current sources of sports information, they often spoil the 
+                                    most interesting happenings before he can see them. This makes watching highlights or replays less interesting for him.</CardText>
+                                    <CardText><strong>Motivations:</strong> To not waste time watching boring events and to find events he might 
+                                    otherwise have overlooked.
+                                    </CardText>
+                                    <CardText><strong>Goals:</strong> Find recent events which are worth revisiting, decide whether an 
+                                    event he was going to watch is worth the time.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col md='6'>
+                        <Card>
+                                <CardBody>
+                                    <CardTitle className='text-center'><strong>Richard Reviewer </strong> - <em>An older fan who wants 
+                                        to maintain a connection to his team and general sporting interests.
+                                    </em></CardTitle>
+                                    <CardImg src={Richard} style={{objectFit: 'contain'}}></CardImg>
+                                    <CardText><strong>About:</strong> As a younger man, Richard had a large group of friends with whom he 
+                                    attended football games and bought PPV boxing events to watch with. He has since moved away to start a 
+                                    family and doesn’t have time to do this anymore, but still wants to stay involved with the social aspect 
+                                    of watching sports.
+                                    </CardText>
+                                    <CardText><strong>Behaviour:</strong> Richard will leave reviews for most events he watches 
+                                    immediately after viewing. He will engage with others’ reviews, deciding whether he agrees with 
+                                    them or not.
+                                    </CardText>
+                                    <CardText><strong>Frustrations:</strong> Richard misses having other interested parties listening to his views 
+                                    and wants to have his voice heard. As of now, his only outlet is debate on online forums, on which his posts 
+                                    are often drowned out or overlooked.
+                                    </CardText>
+                                    <CardText><strong>Motivations:</strong> Richard wants to re-ignite the social side of sports in his life and 
+                                    begin interacting with like-minded fans again.
+                                    </CardText>
+                                    <CardText><strong>Goals:</strong> Leave his opinion on what he has watched and have others rate his 
+                                    reviews as helpful.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}><p><em>Scenarios</em></p></Col>
                 </Row>
             </Container>
             <Footer />
