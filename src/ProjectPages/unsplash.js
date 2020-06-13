@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../App.css'
 import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, CardText, CardFooter } from 'reactstrap';
 
@@ -40,6 +40,11 @@ import { faPeopleArrows, faFighterJet, faEye } from '@fortawesome/free-solid-svg
 
 
 export default function Unsplash() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <div>
             <Container fluid>
@@ -78,7 +83,7 @@ export default function Unsplash() {
                 </Row>
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
-                    <CardImg src={oldLanding} className='project-images'>
+                    <CardImg src={oldLanding} className='project-images' style={{objectFit:'contain'}}>
                     </CardImg>
                 </Col>
                 </Row>
@@ -121,7 +126,7 @@ export default function Unsplash() {
                         <p>Unsplash’s manifesto highlights how they focus more on the free availability of images rather than 
                             appealing to commercial buyers. They assert that the company has a responsibility to help everyone to 
                             create and share their work. </p>
-                        <CardImg src={manifesto} className='project-images d-none d-sm-block'></CardImg>
+                        <CardImg src={manifesto} className='project-images d-none d-sm-block' style={{objectFit:'contain'}}></CardImg>
                         <p>Unsplash’s website uses a minimalist, monochrome design. In all my redesigns I have challenged myself 
                             to adhere to this philosophy as if instructed to do so during a real commission by the company. Whereas 
                             normally <a href="https://designmodo.com/color-attention-design/">a large amount of colour</a> might be used to improve the user’s experience navigating the site 
@@ -255,7 +260,7 @@ export default function Unsplash() {
                     </p>
                     </Col>
                     <Col md={{size: 8, offset: 2}}>
-                        <CardImg src={sus} className='project-images'></CardImg>
+                        <CardImg src={sus} className='project-images' style={{objectFit:'contain'}}></CardImg>
                     </Col>
                     <Col md={{size: 8, offset: 2}}>
                         <p><em>3 Areas of Focus</em></p>
@@ -444,11 +449,11 @@ export default function Unsplash() {
                     <Col md={{size: 8, offset: 2}}>
                         <Row>
                             <Col md='6'>
-                                <CardImg src={scenario1}></CardImg>
+                                <CardImg src={scenario1} style={{objectFit:'contain'}}></CardImg>
                                 <CardFooter>Scenario #1 User Flow</CardFooter>
                             </Col>
                             <Col md='6'>
-                                <CardImg src={scenario3}></CardImg>
+                                <CardImg src={scenario3} style={{objectFit:'contain'}}></CardImg>
                                 <CardFooter>Scenario #3 User Flow</CardFooter>
                             </Col>
                         </Row>
@@ -798,5 +803,3 @@ export default function Unsplash() {
         </div>
     )
 }
-
-// NEXT: same two images of Pic Info w/denise chan pic, check for microanimations article, include third image under first text?

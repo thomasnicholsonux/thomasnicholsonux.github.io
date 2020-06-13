@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../App.css'
 import { Container, Row, Col, CardImg, Card, CardTitle, CardSubtitle, CardBody, CardText, CardFooter } from 'reactstrap';
 
@@ -15,6 +15,20 @@ import tripadvisorApp from '../imgs/arbiterImgs/tripadvisorApp.png'
 import eflSurvey from '../imgs/arbiterImgs/eflSurvey.png'
 import Sam from '../imgs/arbiterImgs/Sam.jpg'
 import Richard from '../imgs/arbiterImgs/Richard.jpg'
+import SamFlow from '../imgs/arbiterImgs/SamFlow.png'
+import RichardFlow from '../imgs/arbiterImgs/RichardFlow.png'
+import Sitemap from '../imgs/arbiterImgs/Sitemap.png'
+import ColourScheme from '../imgs/arbiterImgs/ColourScheme.png'
+import WireHSN from '../imgs/arbiterImgs/WireHSN.png'
+import WirePWE from '../imgs/arbiterImgs/WirePWE.png'
+import ProtoSignIn from '../imgs/arbiterImgs/ProtoSignIn.png'
+import ProtoSearch from '../imgs/arbiterImgs/ProtoSearch.png'
+import ProtoNotifications from '../imgs/arbiterImgs/ProtoNotifications.png'
+import ProtoProfile from '../imgs/arbiterImgs/ProtoProfile.png'
+import ProtoWrite from '../imgs/arbiterImgs/ProtoWrite.png'
+import ProtoEvent from '../imgs/arbiterImgs/ProtoEvent.png'
+
+
 
 
 
@@ -24,6 +38,11 @@ import { faNewspaper, faPenAlt, faUserFriends} from '@fortawesome/free-solid-svg
 
 
 export default function Arbiter() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <div>
             <Container fluid>
@@ -77,7 +96,7 @@ export default function Arbiter() {
                         <li><strong>Research:</strong> Competitor Analysis | User Analysis | 
                         User Interviews | Areas of Focus
                         </li>
-                        <li><strong>Design:</strong> Personas | Scenarios | User Flows | Sitemap | UI Layouts
+                        <li><strong>Design:</strong> Personas | Scenarios | User Flows | Sitemap | Visual Design
                         </li>
                         <li><strong>Build:</strong> LoFi Wireframes | Prototypes
                         </li>
@@ -406,7 +425,345 @@ export default function Arbiter() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}><p><em>Scenarios</em></p></Col>
+                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}>
+                        <p><em>Scenarios</em></p>
+                        <p>From these personas, I created two scenarios which the users might encounter. After writing out the steps 
+                            that Richard and Sam would need to go through to achieve their goals, I made flowcharts using draw.io to 
+                            determine what information they would need to see on each page and what actions they would need to be able 
+                            to take as they continued along their journeys.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='12'>
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Wimbledon After Work - Narrative</strong></CardTitle>
+                                        <CardText>Sam is on the train home from work on a hot summer day. Wimbledon is on, but he has 
+                                            not been able to see any games as he has been in the office all day. He manages to grab a 
+                                            seat and open the app to see if there are any games worth checking out when he gets home. 
+                                            Several of the day’s most popular matches are listed in order of their rating. Sam clicks 
+                                            on one match between two players he likes. He sees how the match has been rated on metrics 
+                                            such as overall importance and excitement. He saves the game to his watch list so he 
+                                            doesn’t forget when he searches for it at home later.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='12'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Wimbledon After Work - User Flow</strong></CardTitle>
+                                        <CardImg style={{objectFit: 'contain', maxHeight: '90%', maxWidth: '90%'}} src={SamFlow}></CardImg>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                        <br />
+                        <Row>
+                        <Col md='12'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Were They Ready To Rumble? - Narrative</strong></CardTitle>
+                                        <CardText>Richard has finished watching a live UFC event at home on his own. He enjoyed the 
+                                            event and now wants to see what other people thought about it and give his own opinion. 
+                                            He finds writing long messages difficult, but wants to give a short appraisal of what he 
+                                            enjoyed and give the event a rating. He opens the app and immediately sees the event 
+                                            listed among his interests. He clicks on it to see what other people have thought. He 
+                                            reads several reviews he agrees with and clicks on a button to demonstrate this. He then 
+                                            makes his own review and adds it to the growing list. When he is finished, he continues 
+                                            reading other reviews and waits to see if anyone finds his addition helpful.
+                                    </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='12'>
+                            <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Were They Ready To Rumble? - User Flow</strong></CardTitle>
+                                        <CardImg style={{objectFit: 'contain', maxHeight: '90%', maxWidth: '90%'}} src={RichardFlow}></CardImg>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}>
+                        <p><em>Sitemap</em></p>
+                        <p>From all my research so far, I began to form a clearer picture of how my app should be structured and 
+                            what pages were necessary to form a Minimum Viable Product. I created a sitemap showing how each page 
+                            should link together and which would allow our two personas to complete their desired goals.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                    <img src={Sitemap} style={{objectFit: 'contain', maxHeight: '100%', maxWidth: '100%'}}></img>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}>
+                        <p><em>Visual Design</em></p>
+                        <p>With the sitemap established, I began making some initial sketches and thinking of some colour scheme 
+                            ideas to fit with the theme of the site. 
+                        </p>
+                        <p>I decided on a monochromatic colour scheme with some complementary accents acquired using a colour wheel (SOURCE). Initially, I considered 
+                            using a green theme to resemble common sports pitches and as a neutral team colour, but felt that this 
+                            would be too limiting and potentially alienating for fans of other sports. Instead, I chose a shade of 
+                            blue not commonly associated with many major sports teams and in keeping with the motivations of our users 
+                            for opening the app when they are relaxing. These colours will be contrasted with the reviews and 
+                            individual ratings, which are sufficiently distinct to avoid confusing the user about their purpose. 
+                        </p>
+                        <CardImg src={ColourScheme} style={{objectFit: 'contain'}}></CardImg>
+                        <p>In terms of typography, I used the <a href='https://learnui.design/blog/android-material-design-font-size-guidelines.html#md-mobile'>
+                            recommended font size</a> of 20px for Headers, 16pt for Input Text and Subheaders, 
+                            and 14pt for Body Text. I used Roboto font as this is considered standard for Android apps.
+                        </p>
+                    </Col>
+                </Row>
+                <hr className="my-2" />
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <h6 className='text-center project-title'>Build</h6>
+                        <p><em>LoFi Wireframes</em></p>
+                        <p>To begin with, I made several low fidelity wireframes with Figma to plan out how I wanted to structure the 
+                            app based on my earlier sketches. Some of these designs made it into later iterations of the app, and some 
+                            were scrapped as better ideas came along.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col><img src={WireHSN} style={{maxWidth: '100%'}}></img></Col>
+                        </Row>
+                        <Row>
+                            <Col><img src={WirePWE} style={{maxWidth: '100%'}}></img></Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p style={{paddingTop: '20px'}}><em>Prototypes</em></p>
+                        <p>After creating several wireframes for each level of the app, I began making a working prototype also 
+                            using Figma. This incorporated the structure of my wireframes along with several UI and colour scheme 
+                            additions, along with hotspots to link the pages together. You can view a working prototype here (LINK).
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='6'>
+                            <img src={ProtoSignIn} style={{maxWidth: '100%'}}></img>
+                        </Col>
+                        <Col md='6' className='my-auto'>
+                            <p><strong>Sign In</strong></p>
+                            <p>The opening screen is designed to have minimal clutter and a simple layout, with only the logo, slogan, 
+                                and sign up/in buttons present. I designed the logo to represent a speedometer or metronome, indicating 
+                                increasing review scores and swaying opinions. 
+                            </p>
+                        </Col>
+                        </Row>
+                        <Row>
+                        <Col md='6' className='my-auto'>
+                            <p><strong>Home</strong></p>
+                            <p>The home page is divided into two separate feeds, one for overall popular events and one tailored 
+                                for the user’s interests. It is further divided up by interests to personalise events to the user. 
+                                This is done to avoid cognitive overload by presenting too many options at once. All additional 
+                                features (e.g. sharing, saving to watch list, etc) are placed on the Event Info screen instead. As 
+                                with all pages, recommended standard sans-serif fonts are used (LINK).
+                            </p>
+                            <p><strong>Navigation</strong></p>
+                            <p>The primary navigation bar is placed at the bottom for ease of access in the most common thumb 
+                                positions (LINK). The “Search” button is in the centre to make it as visible as possible. Each nav 
+                                icon is taken from the “Evericons” collection of commonly used icons on Figma. At the top, the app 
+                                logo is displayed prominently in the center and is clickable to return to the home page as recommended 
+                                here (LINK). Settings are in the top right, and a back button is placed in the top left to return to 
+                                the previous screen. Drop shadows are included to encourage scrolling through the feed. Both bars are 
+                                visible on every page and were made uniform with Figma’s “components” feature.
+                            </p>
+                        </Col>
+                        <Col md='6'>
+                            <img src={feedScreen} style={{maxWidth: '100%'}}></img>
+                        </Col>
+                        </Row>
+                        <Row>
+                            <Col md='6'>
+                            <img src={ProtoSearch} style={{maxWidth: '100%'}}></img></Col>
+                            <Col md='6' className='my-auto'>
+                                <p><strong>Search</strong></p>
+                                <p>Search positioning and layout was created in line with this “best practices” article (LINK). 
+                                The suggestion box includes informal, short content to guide the user. User Rating and Number of 
+                                Reviews are given prominence due to our research on other review sites. I included tags after 
+                                consulting this article (LINK) which recommended their use for content-focused sites with few 
+                                different pages but many topics.
+                            </p></Col>
+                        </Row>
+                        <Row>
+                            <Col md='6' className='my-auto'>
+                                <p><strong>Notifications</strong></p>
+                                <p>As with search, the content here is informal and short, with commendations to encourage engagement 
+                                    from users. Avatars are also included to improve user engagement, as suggested by this article 
+                                    (LINK).
+                            </p></Col>
+                            <Col md='6'>
+                            <img src={ProtoNotifications} style={{maxWidth: '100%'}}></img></Col>
+                        </Row>
+                        <Row>
+                            <Col md='6'>
+                            <img src={ProtoProfile} style={{maxWidth: '100%'}}></img></Col>
+                            <Col md='6' className='my-auto'>
+                                <p><strong>Profile</strong></p>
+                                <p>The profile page offers users the chance to adapt the interests they choose when they first 
+                                    sign up. Most recent Reviews and Watch List are displayed, while the rest are hidden to avoid 
+                                    clutter. Users are assigned a reviewer status based on reviews. This is to encourage participation 
+                                    and somewhat gamify (LINK) the app, with users gaining status upgrades as they leave reviews. 
+                                    This has the added benefit of helping see which reviewers are most trusted, and would help with 
+                                    ranking reviews for display under Event Info.
+                            </p></Col>
+                        </Row>
+                        <Row>
+                            <Col md='6' className='my-auto'>
+                                <p><strong>Write Review</strong></p>
+                                <p>Leaving a review is kept simple. There is only a small amount of space to write a comment, since 
+                                    users will be mobile and potentially unwilling to write long messages on a phone. Readers are 
+                                    also unlikely to want to read long messages either and we don’t want to dedicate the whole screen 
+                                    to a single review. We used Amazon (LINK) as a baseline in deciding precisely how long to allow 
+                                    reviews to be. We use icons rather than numbers to make use of the touchscreen and to add colour 
+                                    (red to contrast with the blue and add excitement to leaving a review). Each category has an 
+                                    information button next to it to clarify its role to users if needed.
+
+                            </p></Col>
+                            <Col md='6'>
+                            <img src={ProtoWrite} style={{maxWidth: '100%'}}></img></Col>
+                        </Row>
+                        <Row>
+                            <Col md='6'>
+                            <img src={ProtoEvent} style={{maxWidth: '100%'}}></img></Col>
+                            <Col md='6' className='my-auto'>
+                                <p><strong>Event Info</strong></p>
+                                <p><em>Note: Images used here are mostly stock and would not be representative of the real image used in 
+                                    the app. The main reason for this is so I don’t get sued (Man U link).</em>
+                                </p>
+                                <p>We open with a relevant picture to draw attention. Overall rating and number of reviews are 
+                                    displayed prominently again in line with our research. An external link to highlights might be 
+                                    offered if one can be found, as discussion on the EFL survey suggested this is important to 
+                                    potential users. Comments written in a review are initially hidden to avoid spoilers and to 
+                                    save screen space. Users are able to like reviews both to boost reviewer ratings and to help 
+                                    sort reviews, modelled after the success of Amazon’s “Did you find this review helpful?” button.
+                                </p>    
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <hr className='my-2' />
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <h6 className='text-center project-title'>Testing</h6>
+                        <p><em>Usability Testing</em></p>
+                        <p>To test the functionality and usability of the app, I gave a series of 8 tasks to two volunteer testers. A 
+                            selection of the most significant outcomes and implications are displayed below. I took on the role of 
+                            facilitator to guide the testers, encouraging them to think aloud throughout, measured their success on the tasks, 
+                            and observed their reactions (e.g. frustrations, satisfaction, level of effort required). 
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <Row>
+                            <Col md='4'>
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Task #1: Writing a Review</strong></CardTitle>
+                                        <CardSubtitle>You watched a basketball game this afternoon and want to leave a review.
+                                        </CardSubtitle>
+                                        <CardText className='pro text-center' style={{paddingTop: '10px'}}>Success: 2/2</CardText>
+                                        <CardText><strong>Notes: </strong><em>Users clicked on both the "Write" and "Search" options
+                                        to leave a review, which I hadn't considered.
+                                        When clarifying their thoughts, one tester reported that their decision depended on 
+                                        if they wanted to see other people's reviews first or not.</em></CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='4'>
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Task #2: Finding a Review</strong></CardTitle>
+                                        <CardSubtitle>You just got home from work and want to find a football game to watch before bed.
+                                        </CardSubtitle>
+                                        <CardText className='pro text-center' style={{paddingTop: '10px'}}>Success: 2/2</CardText>
+                                        <CardText><strong>Notes: </strong><em>One user stated they would check their Notifications tab
+                                            to see if there were recommendations there, which I hadn't thought of when brainstorming
+                                            what notifications should appear.</em></CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col md='4'>
+                                <Card>
+                                    <CardBody>
+                                        <CardTitle><strong>Task #2: Expressing Appreciation for a Review</strong></CardTitle>
+                                        <CardSubtitle>You read a review for an event you watched and want to show that you appreciated
+                                            the reviewer's help.
+                                        </CardSubtitle>
+                                        <CardText className='pro text-center' style={{paddingTop: '10px'}}>Success: 2/2</CardText>
+                                        <CardText><strong>Notes: </strong><em>Shorthand letters for individual ratings (Importance, etc.)
+                                            took one user a few seconds to understand. Changing these to icons or another alternative
+                                            might be useful before delivering the final product.</em></CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <p><em>User Feedback</em></p>
+                        <p>As part of qualitative interviews with testers following their usability testing, I asked several open ended questions
+                            and revisited some statements testers made during the tests for clarification. Pleasingly, both testers found the layout 
+                            and flow of each screen clear and easy to use. As we expected from our initial research, they appreciated the filters
+                            on the Search page for narrowing down results. Our use of icons was clearly understood at each stage without disruption
+                            to task completion. One user required a few seconds to understand the icon for our Settings screen, so in future I  
+                            would consider changing this to a more traditional gear icon.
+                        </p>
+                    </Col>
+                </Row>
+                <hr className='my-2' />
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <h6 className='text-center project-title'>Summary</h6>
+                        <p>This was my first experience with designing UX for an app entirely from the ground up. Doing it for myself 
+                            was an interesting and eye-opening experience as to how each section of the design system works together 
+                            to create the whole. Throughout the process, I consulted many sources to determine best practices and 
+                            this led to me finding new information I had not been exposed to in my online UX courses. 
+                        </p>
+                        <p>	The process demonstrated to me the importance of testing after building and iterating through the whole 
+                            design again, as several areas arose from participants that I had not previously considered. I also 
+                            gained the opportunity to build my first working prototypes with Figma, which I found particularly 
+                            enjoyable and a lot more straightforward than I had anticipated. 
+                        </p>
+                        <p>	Personally, I found the User Research and Interface Design sections to be the most stimulating areas of 
+                            the project and would be very interested in continuing a career in UX focusing on either of these areas, 
+                            although as I go on to work on other projects I am still open to finding out more about other topics, 
+                            such as Usability Testing and Information Architecture. 
+                        </p>
+                    </Col>
+                </Row>
+                <hr className='my-2' />
+                <Row>
+                    <Col md={{size: 8, offset: 2}}>
+                        <h6 className='text-center project-title'>References</h6>
+                        <p>Before and throughout this project, I consulted a number of articles to help inform and justify my decisions. Most of them
+                        are linked throughout this Case Study, but below you can find an exhaustive list of everything I read for this design process.
+                        </p>
+                        <ul>
+                            <li>Article A</li>
+                            <li>Article B</li>
+                        </ul>
+                    </Col>
                 </Row>
             </Container>
             <Footer />
