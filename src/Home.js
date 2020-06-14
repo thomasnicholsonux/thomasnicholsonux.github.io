@@ -70,7 +70,7 @@ export default function Home() {
         <Col md={{ size: 8, offset: 2 }} className='text-center align-items-center justify-content-center' id='projects'>
           <h2>Projects</h2>
           <p>Below are reports on two projects I recently made to showcase my UX skills. They include every stage of the process, 
-            detailing how and I why I made each decision along the way.
+            detailing how and why I made each decision along the way.
           </p>
         </Col>
       </Row>

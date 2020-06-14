@@ -71,9 +71,9 @@ export default function Arbiter() {
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>Problem</h6>
                         <p>
-                        Living away from where I grew up, time zones become a problem for watching sports live. I would wake up 
+                        Living away from where I grew up, time zones are a problem for watching sports live. I wake up 
                         the morning after an important match and have to ask my partner to find a highlights package or link to the 
-                        event in full, even going so far as to press play so I didn’t know how long the video lasted for boxing 
+                        event in full, even occasionally going so far as to press play so I didn’t know how long the video lasted for boxing 
                         matches. Often, the event turned out to be a dud anyway and I’d wasted both our time. I tried searching 
                         online but failed to find any relevant review site for sports that didn’t include major spoilers on the 
                         front page. So, I decided to make one myself.
@@ -317,7 +317,7 @@ export default function Arbiter() {
                 </Row>
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
-                        <p>Looking at all my notes from Competitor Analysis, User Analysis, and User Interviews, I decided that a 
+                        <p>Looking at all the notes from my Competitor Analysis, User Analysis, and User Interviews, I decided that a 
                             number of main features should take focus in the next development phases. I therefore wrote up three 
                             goals and kept them visible near me throughout my work to keep me focused when making any future design 
                             choices.
@@ -326,7 +326,7 @@ export default function Arbiter() {
                 </Row>
                 <Row>
                     <Col md={{size: 8, offset: 2}}>
-                        <Row  className='justify-content-center'>
+                        <Row  className='justify-content-center min-pad'>
                             <Col md='4'>
                                 <Row className='justify-content-center success'>
                                 <FontAwesomeIcon icon={faNewspaper} size='6x' className=''></FontAwesomeIcon>
@@ -359,7 +359,7 @@ export default function Arbiter() {
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>Design</h6>
                         <p><em>Personas</em></p>
-                        <p>Arising out of my initial research, I have created two personas to represent how and why different 
+                        <p>Arising out of my research, I created two personas to represent how and why different 
                             users may make use of this app.
                         </p>
                     </Col>
@@ -374,7 +374,7 @@ export default function Arbiter() {
                                         wants to watch exciting recent sporting events without spoilers.
                                     </em></CardTitle>
                                     <CardImg src={Sam} style={{objectFit: 'contain'}}></CardImg>
-                                    <CardText><strong>About:</strong> Sam works long, irregular hours and often finds it difficult to 
+                                    <CardText style={{paddingTop: '10px'}}><strong>About:</strong> Sam works long, irregular hours and often finds it difficult to 
                                     arrange to see live sporting events. When he returns home, he sometimes watches Sky Sports in the 
                                     background, or searches for highlights on Reddit and other forums on his phone.</CardText>
                                     <CardText><strong>Behaviour:</strong> Sam will use the app when travelling home, or at home on the 
@@ -399,8 +399,8 @@ export default function Arbiter() {
                                         to maintain a connection to his team and general sporting interests.
                                     </em></CardTitle>
                                     <CardImg src={Richard} style={{objectFit: 'contain'}}></CardImg>
-                                    <CardText><strong>About:</strong> As a younger man, Richard had a large group of friends with whom he 
-                                    attended football games and bought PPV boxing events to watch with. He has since moved away to start a 
+                                    <CardText style={{paddingTop: '10px'}}><strong>About:</strong> As a younger man, Richard had a large group of friends with whom he 
+                                    attended football games and bought PPV boxing events. He has since moved away to start a 
                                     family and doesn’t have time to do this anymore, but still wants to stay involved with the social aspect 
                                     of watching sports.
                                     </CardText>
@@ -428,7 +428,8 @@ export default function Arbiter() {
                     <Col md={{size: 8, offset: 2}} style={{paddingTop: '20px'}}>
                         <p><em>Scenarios</em></p>
                         <p>From these personas, I created two scenarios which the users might encounter. After writing out the steps 
-                            that Richard and Sam would need to go through to achieve their goals, I made flowcharts using draw.io to 
+                            that Richard and Sam would need to go through to achieve their goals, I made flowcharts using 
+                            <a href='https://www.draw.io'> Draw.io</a> to 
                             determine what information they would need to see on each page and what actions they would need to be able 
                             to take as they continued along their journeys.
                         </p>
@@ -510,7 +511,8 @@ export default function Arbiter() {
                         <p>With the sitemap established, I began making some initial sketches and thinking of some colour scheme 
                             ideas to fit with the theme of the site. 
                         </p>
-                        <p>I decided on a monochromatic colour scheme with some complementary accents acquired using a colour wheel (SOURCE). Initially, I considered 
+                        <p>I decided on a monochromatic colour scheme with some complementary accents acquired using <a href='https://www.canva.com/colors/color-wheel/'>
+                            Canva's colour wheel</a>. Initially, I considered 
                             using a green theme to resemble common sports pitches and as a neutral team colour, but felt that this 
                             would be too limiting and potentially alienating for fans of other sports. Instead, I chose a shade of 
                             blue not commonly associated with many major sports teams and in keeping with the motivations of our users 
@@ -529,7 +531,7 @@ export default function Arbiter() {
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>Build</h6>
                         <p><em>LoFi Wireframes</em></p>
-                        <p>To begin with, I made several low fidelity wireframes with Figma to plan out how I wanted to structure the 
+                        <p>To begin with, I made several low fidelity wireframes with <a href='https://www.figma.com/'>Figma</a> to plan out how I wanted to structure the 
                             app based on my earlier sketches. Some of these designs made it into later iterations of the app, and some 
                             were scrapped as better ideas came along.
                         </p>
@@ -550,7 +552,8 @@ export default function Arbiter() {
                         <p style={{paddingTop: '20px'}}><em>Prototypes</em></p>
                         <p>After creating several wireframes for each level of the app, I began making a working prototype also 
                             using Figma. This incorporated the structure of my wireframes along with several UI and colour scheme 
-                            additions, along with hotspots to link the pages together. You can view a working prototype here (LINK).
+                            additions, along with hotspots to link the pages together. <a href='https://www.figma.com/proto/TILl0XvGwixwpt2stDMAOp/Prototypes?node-id=1%3A2&scaling=scale-down'>
+                            View a working prototype here</a>.
                         </p>
                     </Col>
                 </Row>
@@ -562,7 +565,8 @@ export default function Arbiter() {
                         </Col>
                         <Col md='6' className='my-auto'>
                             <p><strong>Sign In</strong></p>
-                            <p>The opening screen is designed to have minimal clutter and a simple layout, with only the logo, slogan, 
+                            <p>Taking inspiration from some of <a href='https://www.justinmind.com/blog/20-inspiring-website-login-form-pages/'>these pages</a>, 
+                                the opening screen is designed to have minimal clutter and a simple layout, with only the logo, slogan, 
                                 and sign up/in buttons present. I designed the logo to represent a speedometer or metronome, indicating 
                                 increasing review scores and swaying opinions. 
                             </p>
@@ -573,16 +577,20 @@ export default function Arbiter() {
                             <p><strong>Home</strong></p>
                             <p>The home page is divided into two separate feeds, one for overall popular events and one tailored 
                                 for the user’s interests. It is further divided up by interests to personalise events to the user. 
-                                This is done to avoid cognitive overload by presenting too many options at once. All additional 
+                                This is done to <a href='https://www.smashingmagazine.com/2016/09/reducing-cognitive-overload-for-a-better-user-experience/'>avoid cognitive overload </a>
+                                 by presenting too many options at once. All additional 
                                 features (e.g. sharing, saving to watch list, etc) are placed on the Event Info screen instead. As 
-                                with all pages, recommended standard sans-serif fonts are used (LINK).
+                                with all pages, <a href='https://www.templatemonster.com/blog/9-essential-sport-web-design-features/'>recommended standard sans-serif fonts</a> are used.
                             </p>
                             <p><strong>Navigation</strong></p>
-                            <p>The primary navigation bar is placed at the bottom for ease of access in the most common thumb 
-                                positions (LINK). The “Search” button is in the centre to make it as visible as possible. Each nav 
-                                icon is taken from the “Evericons” collection of commonly used icons on Figma. At the top, the app 
-                                logo is displayed prominently in the center and is clickable to return to the home page as recommended 
-                                here (LINK). Settings are in the top right, and a back button is placed in the top left to return to 
+                            <p>The primary navigation bar is placed at the bottom for ease of access in the 
+                                <a href='https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/'> most common thumb 
+                                positions</a>. The “Search” button is in the centre to make it as visible as possible. Each nav 
+                                icon is taken from the <a href='https://www.figma.com/resources/assets/evericons-for-figma/'>
+                                “Evericons” collection</a> of commonly used icons on Figma. At the top, the app 
+                                logo is displayed prominently in the center and is clickable to return to the home page as recommended  
+                                <a href='https://blog.prototypr.io/a-guide-to-designing-perfect-links-in-ux-414558f35730'> here</a>. Settings are in the top right, and a 
+                                back button is placed in the top left to return to 
                                 the previous screen. Drop shadows are included to encourage scrolling through the feed. Both bars are 
                                 visible on every page and were made uniform with Figma’s “components” feature.
                             </p>
@@ -596,19 +604,20 @@ export default function Arbiter() {
                             <img src={ProtoSearch} style={{maxWidth: '100%'}}></img></Col>
                             <Col md='6' className='my-auto'>
                                 <p><strong>Search</strong></p>
-                                <p>Search positioning and layout was created in line with this “best practices” article (LINK). 
+                                <p>Search positioning and layout was created in line with <a href='https://www.nngroup.com/articles/homepage-links/'>
+                                this “Best Practices” article</a>. 
                                 The suggestion box includes informal, short content to guide the user. User Rating and Number of 
                                 Reviews are given prominence due to our research on other review sites. I included tags after 
-                                consulting this article (LINK) which recommended their use for content-focused sites with few 
+                                consulting <a href='https://www.webfx.com/blog/web-design/navigation-design-patterns/'> this navigation article</a> which recommended their use for content-focused sites with few 
                                 different pages but many topics.
                             </p></Col>
                         </Row>
                         <Row>
                             <Col md='6' className='my-auto'>
                                 <p><strong>Notifications</strong></p>
-                                <p>As with search, the content here is informal and short, with commendations to encourage engagement 
-                                    from users. Avatars are also included to improve user engagement, as suggested by this article 
-                                    (LINK).
+                                <p>As with search, the content here is informal and short, with commendations to encourage participation 
+                                    from users. Avatars are also included to <a href='https://www.uxmatters.com/mt/archives/2013/01/the-power-of-faces-in-user-experience.php'>
+                                    improve user engagement.</a>
                             </p></Col>
                             <Col md='6'>
                             <img src={ProtoNotifications} style={{maxWidth: '100%'}}></img></Col>
@@ -619,9 +628,9 @@ export default function Arbiter() {
                             <Col md='6' className='my-auto'>
                                 <p><strong>Profile</strong></p>
                                 <p>The profile page offers users the chance to adapt the interests they choose when they first 
-                                    sign up. Most recent Reviews and Watch List are displayed, while the rest are hidden to avoid 
+                                    signed up. Most Recent Reviews and a Watch List are displayed, while the rest are hidden to avoid 
                                     clutter. Users are assigned a reviewer status based on reviews. This is to encourage participation 
-                                    and somewhat gamify (LINK) the app, with users gaining status upgrades as they leave reviews. 
+                                    and <a href='https://uxplanet.org/gamification-in-ux-increasing-user-engagement-6437cbf702aa'> gamify</a> the app, with users gaining status upgrades as they leave reviews. 
                                     This has the added benefit of helping see which reviewers are most trusted, and would help with 
                                     ranking reviews for display under Event Info.
                             </p></Col>
@@ -632,8 +641,8 @@ export default function Arbiter() {
                                 <p>Leaving a review is kept simple. There is only a small amount of space to write a comment, since 
                                     users will be mobile and potentially unwilling to write long messages on a phone. Readers are 
                                     also unlikely to want to read long messages either and we don’t want to dedicate the whole screen 
-                                    to a single review. We used Amazon (LINK) as a baseline in deciding precisely how long to allow 
-                                    reviews to be. We use icons rather than numbers to make use of the touchscreen and to add colour 
+                                    to a single review. <a href='https://www.giveawayservice.com/blog/ideal-social-media-and-blog-post-length'>I used Amazon as a baseline</a> in deciding precisely how long to allow 
+                                    reviews to be. I used icons rather than numbers to make use of the touchscreen and to add colour 
                                     (red to contrast with the blue and add excitement to leaving a review). Each category has an 
                                     information button next to it to clarify its role to users if needed.
 
@@ -647,14 +656,16 @@ export default function Arbiter() {
                             <Col md='6' className='my-auto'>
                                 <p><strong>Event Info</strong></p>
                                 <p><em>Note: Images used here are mostly stock and would not be representative of the real image used in 
-                                    the app. The main reason for this is so I don’t get sued (Man U link).</em>
+                                    the app. The main reason for this is <a href='https://www.theguardian.com/football/2020/may/22/manchester-united-sues-football-manager-makers-over-use-of-name#:~:text=Manchester%20United%20sues%20Football%20Manager%20makers%20over%20use%20of%20name,-Premier%20League%20club&text=Manchester%20United%20is%20suing%20the,%E2%80%9Cextensively%20throughout%20the%20game%E2%80%9D.'>
+                                        so I don’t get sued</a>.</em>
                                 </p>
                                 <p>We open with a relevant picture to draw attention. Overall rating and number of reviews are 
                                     displayed prominently again in line with our research. An external link to highlights might be 
                                     offered if one can be found, as discussion on the EFL survey suggested this is important to 
                                     potential users. Comments written in a review are initially hidden to avoid spoilers and to 
                                     save screen space. Users are able to like reviews both to boost reviewer ratings and to help 
-                                    sort reviews, modelled after the success of Amazon’s “Did you find this review helpful?” button.
+                                    sort reviews, modelled after the success of <a href='https://articles.uie.com/magicbehindamazon/'>
+                                        Amazon’s “Did you find this review helpful?” button.</a>
                                 </p>    
                             </Col>
                         </Row>
@@ -667,7 +678,7 @@ export default function Arbiter() {
                         <p><em>Usability Testing</em></p>
                         <p>To test the functionality and usability of the app, I gave a series of 8 tasks to two volunteer testers. A 
                             selection of the most significant outcomes and implications are displayed below. I took on the role of 
-                            facilitator to guide the testers, encouraging them to think aloud throughout, measured their success on the tasks, 
+                            facilitator to guide the testers, encouraging them to think aloud throughout. I measured their success on the tasks, 
                             and observed their reactions (e.g. frustrations, satisfaction, level of effort required). 
                         </p>
                     </Col>
@@ -741,11 +752,11 @@ export default function Arbiter() {
                             this led to me finding new information I had not been exposed to in my online UX courses. 
                         </p>
                         <p>	The process demonstrated to me the importance of testing after building and iterating through the whole 
-                            design again, as several areas arose from participants that I had not previously considered. I also 
+                            design again, as several new areas of interest arose from participants that I had not previously considered. I also 
                             gained the opportunity to build my first working prototypes with Figma, which I found particularly 
                             enjoyable and a lot more straightforward than I had anticipated. 
                         </p>
-                        <p>	Personally, I found the User Research and Interface Design sections to be the most stimulating areas of 
+                        <p>	Personally, I found the User Research and Prototyping sections to be the most stimulating areas of 
                             the project and would be very interested in continuing a career in UX focusing on either of these areas, 
                             although as I go on to work on other projects I am still open to finding out more about other topics, 
                             such as Usability Testing and Information Architecture. 
@@ -757,11 +768,41 @@ export default function Arbiter() {
                     <Col md={{size: 8, offset: 2}}>
                         <h6 className='text-center project-title'>References</h6>
                         <p>Before and throughout this project, I consulted a number of articles to help inform and justify my decisions. Most of them
-                        are linked throughout this Case Study, but below you can find an exhaustive list of everything I read for this design process.
+                        are linked throughout this Case Study, but below you can find an alphabetical list of articles I read for this design process.
                         </p>
                         <ul>
-                            <li>Article A</li>
-                            <li>Article B</li>
+                            <li><a href='https://www.nngroup.com/articles/mobile-ux/'>
+                                Budiu, Raluca - "Mobile User Experience: Limitations and Strengths."</a></li>
+                            <li><a href='https://www.uxmatters.com/mt/archives/2013/01/the-power-of-faces-in-user-experience.php'>
+                                Coston, James - "The Power of Faces in User Experience."</a></li>
+                            <li><a href='https://www.webfx.com/blog/web-design/navigation-design-patterns/'>
+                                Craig, William - "Guide to Website Navigation Design Patterns."</a></li>
+                            <li><a href='https://econsultancy.com/why-tripadvisor-s-ux-is-head-and-shoulders-above-otas/'>
+                                Davis, Ben - "Why TripAdvisor’s UX is head and shoulders above OTAs."</a></li>
+                            <li><a href='https://medium.muz.li/imdb-redesigned-ux-ui-167a59c27642/'>
+                                Diouane, Nourdine - "IMDb — Mobile app redesign."</a></li>
+                            <li><a href='https://www.efl.com/contentassets/5fd7b93168134ee0b9da11fa8e30abd0/efl-supporters-survey-2019-report.pdf'>
+                                EFL.com - EFL Supporters Survey, 2019.</a></li>
+                            <li><a href='https://www.giveawayservice.com/blog/ideal-social-media-and-blog-post-length'>
+                                GiveAwayService - "Ideal Review Length."</a></li>
+                            <li><a href='https://blog.prototypr.io/a-guide-to-designing-perfect-links-in-ux-414558f35730'>
+                                Jing (Prototypr) - "A Comprehensive Guide to Designing Perfect Links in UX."</a></li>
+                            <li><a href='https://www.nngroup.com/articles/homepage-links/'>
+                                Loranger, Hoa - "Homepage Links Remain a Necessity."</a></li>
+                            <li><a href='https://material.io/components'>
+                                Material.io - "Components."</a></li>
+                            <li><a href='https://uxmentor.me/sitemaps-the-beginners-guide/'>
+                                Mears, Chris - "Sitemaps – The Beginner’s Guide."</a></li>
+                            <li><a href='https://ec.europa.eu/competition/antitrust/cases/dec_docs/38173/38173_104_7.pdf/'>
+                                OfCom - "Premier League Football."</a></li>
+                            <li><a href='https://www.templatemonster.com/blog/9-essential-sport-web-design-features/'>
+                                Preda, Oksana - "9 Things That Will Make Your Sports Website Look Awesome."</a></li>
+                            <li><a href='https://uxdesign.cc/mobile-ui-13-basic-patterns-of-app-ui-design-to-know-about-d3f7c6176f13'>
+                                Shokurova, Kate - "13 basic mobile UI patterns to know about."</a></li>
+                            <li><a href='https://articles.uie.com/magicbehindamazon/'>
+                                Spool, Jared - "The Magic Behind Amazon’s 2.7 Billion Dollar Question."</a></li>
+                            <li><a href='https://uxplanet.org/gamification-in-ux-increasing-user-engagement-6437cbf702aa'>
+                                Tubik Studio - "Gamification in UX. Increasing User Engagement."</a></li>
                         </ul>
                     </Col>
                 </Row>

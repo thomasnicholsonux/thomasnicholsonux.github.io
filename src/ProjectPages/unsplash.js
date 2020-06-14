@@ -793,8 +793,28 @@ export default function Unsplash() {
                         for and whilst conducting this redesign.
                     </p>
                     <ul>
-                        <li>Article A</li>
-                        <li>Article B</li>
+                        <li><a href='https://www.uxbooth.com/articles/best-practices-for-search/'>
+                            Babich, Nick - "Best Practices for Search."</a></li>
+                        <li><a href='https://medium.com/thinking-design/how-to-write-design-user-friendly-error-messages-87d0207bb902'>
+                            Babich, Nick - "How to Write and Design User-Friendly Error Messages."</a></li>
+                        <li><a href='https://designmodo.com/color-attention-design/'>
+                            Borowska, Paula - "Drawing Attention Through Color in Web Design."</a></li>
+                        <li><a href='https://www.forbesindia.com/article/brand-connect/gamification-in-ux-design-for-enhanced-user-experience-and-engagement/52075/1'>
+                            Brand Connect - "Gamification in UX Design for enhanced user experience and engagement."</a></li>
+                        <li><a href='https://uxplanet.org/ux-of-microinteractions-for-user-delight-fac1baed527a'>
+                            CanvasFlip - "UX of microinteractions for user delight."</a></li>
+                        <li><a href='https://www.nngroup.com/articles/icon-usability/'>
+                            Harley, Aurora - "Icon Usability."</a></li>
+                        <li><a href='https://uxplanet.org/ux-of-microinteractions-for-user-delight-fac1baed527a'>
+                            Nielsen, Jakob - "Search: Visible and Simple."</a></li>
+                        <li><a href='https://help.unsplash.com/en/articles/2610257-why-submit-photos-to-unsplash'>
+                            Santos, Tanya - "Why submit photos to Unsplash."</a></li>
+                        <li><a href='https://www.nngroup.com/articles/scoped-search/'>
+                            Sherwin, Katie - "Scoped Search: Dangerous, but Sometimes Useful."</a></li>
+                        <li><a href='https://usabilitygeek.com/how-to-use-the-system-usability-scale-sus-to-evaluate-the-usability-of-your-website/'>
+                            Thomas, Nathan - "How To Use The System Usability Scale (SUS) To Evaluate The Usability Of Your Website."</a></li>
+                        <li><a href='https://petapixel.com/2019/10/07/i-tried-unsplash-for-two-years-heres-what-i-learned/'>
+                            Vanyi, Dominik - "I Tried Unsplash for Two Years, Here’s What I Learned."</a></li>
                     </ul>
                 </Col>
                 </Row>
